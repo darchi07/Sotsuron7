@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Medium Text"
+        android:id="@+id/mondaisu"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Large Text"
+        android:id="@+id/mondai"
+        android:textSize="30dp"
+        android:layout_above="@+id/output"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Large Text"
+        android:id="@+id/output"
+
+        android:textSize="30dp"
+        android:layout_above="@+id/button_reference"
+        android:layout_toEndOf="@+id/btn02" />
+    <Button
+        android:id="@+id/button_reference"
+        android:layout_width="600dp"
+        android:layout_height="150dp"
+        android:text=" "
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+    <Button
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:id="@+id/btn01"
+        android:background="@drawable/shihyou009a"
+        android:layout_alignParentBottom="true"
+        android:layout_alignLeft="@id/button_reference"
+        />
+
+    <Button
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:background="@drawable/shihyou009b"
+        android:id="@+id/btn02"
+        android:layout_alignParentBottom="true"
+        android:layout_toRightOf="@+id/btn01"/>
+
+    <Button
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:id="@+id/btn03"
+        android:background="@drawable/shihyou009c"
+         android:layout_alignParentBottom="true"
+        android:layout_toRightOf="@+id/btn02"
+         />
+
+    <Button
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:id="@+id/btn04"
+        android:background="@drawable/shihyou009d"
+        android:layout_alignParentBottom="true"
+        android:layout_toRightOf="@+id/btn03"/><!--150→58.3-->
+
+</RelativeLayout>
